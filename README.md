@@ -12,6 +12,7 @@ Check and compare environmental specs (emissions, mileage etc.) for Dutch regist
 
 ## Roadmap:
 
-- Compare cars by their differences in percentages
+- Compare cars by their differences in percentages as an addition to the current side-by-side comparison
+- Use locally stored car info when no internet connection (already in use in compare mode)
 - Camera capture/photo library import (PRO)
 - Automatic number plate recognition functionality (PRO)

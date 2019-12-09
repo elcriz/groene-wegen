@@ -44,14 +44,16 @@ export const App = () => {
         setIsLoading(true);
         const general = await RdwService.getByNumberPlate(numberPlate);
         const environmental = await RdwService.getEnvironmentalByNumberPlate(numberPlate);
-        const car = new CarModel({ environmental, ...general[0] });
+		const car = new CarModel({ environmental, ...general[0] });
+
         if (!car.numberPlate) {
             setError('Ongeldig kenteken');
             setTimeout(() => {
                 setError(undefined);
             }, 2500);
         }
-        if (car.numberPlate) {
+
+		if (car.numberPlate) {
             if (shouldAddCar) {
                 setCars([car, ...cars]);
                 StorageService.addToStorage([car, ...cars]);
