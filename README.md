@@ -1,5 +1,5 @@
 # GroeneWegen
-Check and compare environmental specs (emissions, mileage etc.) for Dutch registered cars.
+Check and compare environmental specs (emissions, mileage etc.) for vehicles registered in The Netherlands (by their number plate).
 
 ## A personal side project to learn more about:
 
