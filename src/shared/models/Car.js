@@ -100,7 +100,10 @@ function getCarType(inrichting) {
 }
 
 function getCarName(merk, handelsbenaming) {
-    return handelsbenaming.replace(merk, '').trim();
+	if (!merk && !handelsbenaming) {
+		return undefined;
+	}
+	return handelsbenaming.replace(merk, '').trim();
 }
 
 export default Car;
