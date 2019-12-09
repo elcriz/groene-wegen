@@ -1,9 +1,8 @@
 const options = {
-    headers: { 'X-App-Token': 'sx2tUJREaYSPBDaMp88kiCI5K' }
+    headers: { 'X-App-Token': 'sx2tUJREaYSPBDaMp88kiCI5K' } // Public app token
 };
 
 export default class RdwService {
-
     static async getByNumberPlate(numberPlate) {
         try {
             const response = await fetch(
