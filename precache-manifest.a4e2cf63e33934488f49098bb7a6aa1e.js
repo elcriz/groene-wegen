@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43f18c658e4ff522e90dc1821659fd37",
+    "revision": "63a2ea19f98dd3c5cf0d9edf8c462c33",
     "url": "/groene-wegen/index.html"
   },
   {
-    "revision": "a6f4097a216bc64d90cb",
+    "revision": "2f07017d1a023a0aab41",
     "url": "/groene-wegen/static/css/main.26fc2d8e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/groene-wegen/static/js/2.db1b208b.chunk.js.LICENSE"
   },
   {
-    "revision": "a6f4097a216bc64d90cb",
-    "url": "/groene-wegen/static/js/main.7f79d922.chunk.js"
+    "revision": "2f07017d1a023a0aab41",
+    "url": "/groene-wegen/static/js/main.c4358496.chunk.js"
   },
   {
     "revision": "8d28d8df3c6a2f486ace",
