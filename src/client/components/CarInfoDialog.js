@@ -4,7 +4,7 @@ import { FaCar } from 'react-icons/fa';
 import Dialog from './Dialog';
 import CarIdentity from './CarIdentity';
 
-export const CarInfo = ({
+export const CarInfoDialog = ({
     item,
     onReturnClick
 }) => (
@@ -98,9 +98,9 @@ export const CarInfo = ({
     </Dialog>
 );
 
-CarInfo.propTypes = {
+CarInfoDialog.propTypes = {
     item: PropTypes.object.isRequired,
     onReturnClick: PropTypes.func.isRequired
 };
 
-export default CarInfo;
+export default CarInfoDialog;

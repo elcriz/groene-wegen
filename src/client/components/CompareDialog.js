@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Dialog from './Dialog';
 import CarIdentity from './CarIdentity';
 
-export const Compare = ({
+export const CompareDialog = ({
     items,
     onReturnClick
 }) => (
@@ -103,9 +103,9 @@ export const Compare = ({
     </Dialog>
 );
 
-Compare.propTypes = {
+CompareDialog.propTypes = {
     items: PropTypes.array.isRequired,
     onReturnClick: PropTypes.func.isRequired
 };
 
-export default Compare;
+export default CompareDialog;

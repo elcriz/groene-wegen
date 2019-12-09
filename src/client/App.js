@@ -4,34 +4,47 @@ import RdwService from '../shared/services/RdwService';
 import CarModel from '../shared/models/Car';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
-import Compare from './components/Compare';
+import Dialog from './components/Dialog';
+import CompareDialog from './components/CompareDialog';
 import Recents from './components/Recents';
-import CarInfo from './components/CarInfo';
+import CarInfoDialog from './components/CarInfoDialog';
 import Loader from './components/Loader';
 import Error from './components/Error';
 
 export const App = () => {
 	const [currentCar, setCurrentCar] = useState();
     const [error, setError] = useState(undefined);
-    const [cars, setCars] = useState(StorageService.getFromStorage());
-    const [isLoading, setIsLoading] = useState(false);
+	const [cars, setCars] = useState(StorageService.getFromStorage());
+	const [carToDelete, setCarToDelete] = useState(undefined);
+	const [isLoading, setIsLoading] = useState(false);
+	const [isClearVisible, setIsClearVisible] = useState(false);
     const [isCompareVisible, setIsCompareVisible] = useState(false);
 
     const handleReturnClick = () => {
         setCurrentCar(undefined);
     };
 
-    const handleCompareToggleClick = () => {
+    const handleCompareToggle = () => {
         setIsCompareVisible(!isCompareVisible);
-    }
+	};
 
-    const handleClearClick = () => {
+	const handleClearToggleClick = () => {
+		setIsClearVisible(!isClearVisible);
+	};
+
+    const handleClear = () => {
+		setIsClearVisible(false);
         setCars([]);
         StorageService.addToStorage('');
-    }
+	}
 
-    const handleDeleteCarClick = (carIndex) => {
-        const newCars = cars.filter((car, index) => index !== carIndex);
+	const handleDeleteCarToggle = (carIndex) => {
+		setCarToDelete(carIndex);
+	};
+
+    const handleDeleteCar = () => {
+		const newCars = cars.filter((car, index) => index !== carToDelete);
+		setCarToDelete(undefined);
         setCars(newCars);
         StorageService.addToStorage(newCars);
     }
@@ -62,7 +75,7 @@ export const App = () => {
             setCurrentCar(car);
         }
         setIsLoading(false);
-    }
+	}
 
     return (
         <React.Fragment>
@@ -74,23 +87,39 @@ export const App = () => {
             </Header>
             <Recents
                 items={cars}
-                onCompareClick={handleCompareToggleClick}
-                onClearClick={handleClearClick}
+                onCompareClick={handleCompareToggle}
+				onClearClick={handleClearToggleClick}
                 onItemClick={handleItemClick}
-                onDeleteCarClick={handleDeleteCarClick}
+				onDeleteCarClick={handleDeleteCarToggle}
             />
             {currentCar && (
-                <CarInfo
+                <CarInfoDialog
                     item={currentCar}
                     onReturnClick={handleReturnClick}
                 />
             )}
             {isCompareVisible && (
-                <Compare
+                <CompareDialog
                     items={cars}
-                    onReturnClick={handleCompareToggleClick}
+                    onReturnClick={handleCompareToggle}
                 />
             )}
+			{isClearVisible && (
+				<Dialog
+					label="Weet je zeker dat je alle auto's wilt verwijderen?"
+					onConfirmClick={handleClear}
+					onCloseClick={handleClearToggleClick}
+					isSmall
+				/>
+			)}
+			{carToDelete !== undefined && (
+				<Dialog
+					label="Weet je zeker dat je deze auto wilt verwijderen?"
+					onConfirmClick={handleDeleteCar}
+					onCloseClick={handleDeleteCarToggle}
+					isSmall
+				/>
+			)}
             {isLoading && (
                 <Loader />
             )}
