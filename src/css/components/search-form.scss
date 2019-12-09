@@ -1,0 +1,54 @@
+.search-form__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing $spacing 0;
+}
+
+.search-form__field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -$spacing * 2.75;
+    padding: $spacing $spacing;
+    background-color: rgb(255, 204, 0);
+    background: linear-gradient(rgb(255, 204, 0), rgb(255, 214, 10));
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, .15);
+    max-width: 180px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 4px;
+    z-index: +1;
+
+    &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: $spacing * 3.5;
+        background-color: rgb(7, 90, 168);
+        color: rgb(255, 255, 255);
+        content: 'NL';
+        font-weight: bold;
+    }
+}
+
+.search-form__input {
+    appearance: none;
+    border: none;
+    margin-left: $spacing * 3.5;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: $spacing * 3;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &:focus {
+        outline: none;
+    }
+}

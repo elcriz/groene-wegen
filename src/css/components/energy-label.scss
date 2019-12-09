@@ -1,0 +1,46 @@
+.energy-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: $spacing / 2 $spacing;
+    font-size: $spacing * 2.5;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(220, 220, 220);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.energy-label--A {
+    background-color: $color-energy-label-a;
+    color: rgb(255, 255, 255);
+}
+
+.energy-label--B {
+    background-color: $color-energy-label-b;
+    color: rgb(255, 255, 255);
+}
+
+.energy-label--C {
+    background-color: $color-energy-label-c;
+}
+
+.energy-label--D {
+    background-color: $color-energy-label-d;
+}
+
+.energy-label--E {
+    background-color: $color-energy-label-e;
+}
+
+.energy-label--F {
+    background-color: $color-energy-label-f;
+    color: rgb(255, 255, 255);
+}
+
+.energy-label--G {
+    background-color: $color-energy-label-g;
+    color: rgb(255, 255, 255);
+}

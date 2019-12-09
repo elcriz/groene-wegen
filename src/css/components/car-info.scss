@@ -1,0 +1,129 @@
+.car-info {
+    position: relative;
+}
+
+.car-info--positioned {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.car-info__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    height: calc(100% - 120px);
+}
+
+.car-info__data {
+    flex-basis: 50%;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.car-info__data-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid rgb(210, 210, 210);
+    border-bottom: 1px solid rgb(210, 210, 210);
+    background-origin: border-box;
+
+    .car-info:not(.car-info--positioned) & {
+        padding-top: $spacing * 3;
+    }
+}
+
+.car-info__data-heading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: $spacing * 1.25;
+    color: rgb(0, 77, 99);
+    font-size: $spacing * 2;
+    font-weight: bold;
+}
+
+.car-info__data-list {
+    margin: 0;
+    padding: $spacing * 2 0 0;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    box-sizing: border-box;
+
+    > * {
+        flex-basis: 100%;
+    }
+
+    dt {
+        font-size: $spacing * 1.25;
+        font-weight: normal;
+        color: rgb(120, 120, 120);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    dd {
+        margin: $spacing / 3 0 $spacing / 1.25;
+
+        strong {
+            padding-right: $spacing / 2;
+            font-size: 125%;
+        }
+    }
+
+    .car-info:not(.car-info--positioned) & {
+        padding-bottom: $spacing;
+    }
+}
+
+.car-info__actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: $spacing * 1.5 0;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(210, 210, 210);
+}
+
+.car-info__car-icon {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $spacing * 5;
+    height: $spacing * 5;
+    font-size: $spacing;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 50%;
+
+    svg {
+        font-size: $spacing * 3;
+    }
+}
+
+.car-info__action {
+    padding: $spacing $spacing * 2;
+    background-color: rgb(7, 90, 168);
+    color: rgb(255, 255, 255);
+    appearance: none;
+    font-family: 'Nunito Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: $spacing * 1.75;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+}

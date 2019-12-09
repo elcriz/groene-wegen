@@ -1,0 +1,50 @@
+.car-identity {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    padding: $spacing * 1.35 $spacing * 2;
+    box-sizing: border-box;
+    background-color: rgb(240, 240, 240);
+    appearance: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.car-identity__content {
+    order: 1;
+    width: 100%;
+}
+
+.car-identity__name {
+    width: calc(100% - 20px);
+    margin-bottom: $spacing / 2.25;
+    font-size: $spacing * 1.75;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.car-identity__meta-data {
+    position: relative;
+    height: $spacing * 2;
+}
+
+.car-identity__number-plate {
+    position: absolute;
+    left: 0;
+    color: rgb(60, 60, 60);
+}
+
+.car-identity__engine-type {
+    position: absolute;
+    left: $spacing * 7;
+}
+
+.car-identity__energy-label {
+    order: 0;
+    margin-right: $spacing * 2;
+    font-size: $spacing * 2.5;
+}

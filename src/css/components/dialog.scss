@@ -1,0 +1,51 @@
+.dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: +1;
+}
+
+.dialog__inner {
+    position: absolute;
+    left: $spacing * 2;
+    right: $spacing * 2;
+    top: $spacing * 2;
+    bottom: $spacing * 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px $spacing * 2 rgba(0, 0, 0, .25);
+    overflow: hidden;
+}
+
+.dialog__actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: $spacing * 1.5 0;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(210, 210, 210);
+}
+
+.dialog__action {
+    padding: $spacing $spacing * 2;
+    background-color: rgb(7, 90, 168);
+    color: rgb(255, 255, 255);
+    appearance: none;
+    font-family: 'Nunito Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: $spacing * 1.75;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+}

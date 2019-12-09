@@ -1,0 +1,119 @@
+.recents {
+    position: relative;
+}
+
+.recents__empty-state {
+    text-align: center;
+    font-size: $spacing * 2;
+    line-height: 1.4em;
+    color: rgb(120, 120, 120);
+    max-width: 75%;
+    margin: 0 auto;
+    padding: $spacing * 6 $spacing * 4;
+    border: 1px dashed rgb(210, 210, 210);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recents__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing $spacing * 2 $spacing / 2;
+}
+
+.recents__heading {
+    color: rgb(0, 77, 99);
+    font-size: $spacing * 2;
+    font-weight: bold;
+}
+
+.recents__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.recents__action {
+    padding: $spacing / 1.25 $spacing $spacing / 2;
+    margin-left: $spacing;
+    color: rgb(120, 120, 120);
+    background-color: rgb(220, 220, 220);
+    font-size: $spacing * 1.75;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.recents__delete-item-action {
+    position: absolute;
+    right: $spacing * 2;
+    margin-top: -$spacing * 4.5;
+    color: rgb(160, 160, 160);
+    background-color: transparent;
+    font-size: $spacing * 2;
+    appearance: none;
+    border: none;
+}
+
+.recents__inner {
+    overflow-y: scroll;
+    height: calc(100vh - 244px);
+    margin-top: $spacing * 2;
+}
+
+.recents__item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    padding: $spacing $spacing * 2;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: 'Nunito Sans', 'Helvetica', 'Arial', sans-serif;
+    appearance: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(210, 210, 210);
+
+    &:first-child {
+        border-top: 1px solid rgb(210, 210, 210);
+    }
+
+    &:focus {
+        outline: none;
+        background-color: rgb(240, 255, 255);
+    }
+}
+
+.recents__item-content {
+    order: 1;
+}
+
+.recents__item-energy-label {
+    order: 0;
+    margin-right: $spacing* 2;
+    font-size: $spacing * 2.5;
+}
+
+.recents__item-name {
+    margin-bottom: $spacing / 2.25;
+    font-size: $spacing * 1.75;
+}
+
+.recents__item-meta-data {
+    position: relative;
+    height: $spacing * 2;
+}
+
+.recents__item-number-plate {
+    position: absolute;
+    left: 0;
+    color: rgb(60, 60, 60);
+}
+
+.recents__item-engine-type {
+    position: absolute;
+    left: $spacing * 7;
+}

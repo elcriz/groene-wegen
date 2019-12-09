@@ -1,0 +1,54 @@
+@keyframes car {
+    from {
+        left: -20%;
+    }
+    to {
+        right: -5%;
+    }
+}
+
+.header {
+    position: relative;
+    margin-bottom: $spacing * 6;
+    background-color: rgb(0, 114, 199);
+    background: linear-gradient(rgb(0, 104, 189), rgb(0, 138, 223));
+}
+
+.header__heading-group {
+    padding: $spacing * 5 $spacing * 2 $spacing * 3;
+    text-align: center;
+}
+
+.header__heading,
+.header__sub-heading {
+    color: rgb(255, 255, 255);
+}
+
+.header__heading {
+    margin-bottom: $spacing;
+    font-family: 'Josefin Sans';
+    font-size: $spacing * 4;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0, 84, 169);
+    letter-spacing: -1px;
+}
+
+.header__sub-heading {
+    font-weight: 200;
+    opacity: .75;
+}
+
+.header__icon {
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    color: rgb(0, 75, 144);
+    font-size: $spacing * 6;
+    opacity: .65;
+}
+
+.header__icon--car {
+    left: 105%;
+    bottom: -6px;
+    animation: car 7.5s infinite ease;
+}
