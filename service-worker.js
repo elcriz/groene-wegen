@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/groene-wegen/precache-manifest.a4e2cf63e33934488f49098bb7a6aa1e.js"
+  "/groene-wegen/precache-manifest.b1adca7c2abc5e2601e5906e3ab006b9.js"
 );
 
 self.addEventListener('message', (event) => {
