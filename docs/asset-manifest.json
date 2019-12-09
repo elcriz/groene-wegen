@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.26fc2d8e.chunk.css",
-    "main.js": "/static/js/main.a6b12f4b.chunk.js",
-    "main.js.map": "/static/js/main.a6b12f4b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.62377bfa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.62377bfa.js.map",
-    "static/js/2.db1b208b.chunk.js": "/static/js/2.db1b208b.chunk.js",
-    "static/js/2.db1b208b.chunk.js.map": "/static/js/2.db1b208b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2c3a273fbdd1f4ca5172dc10cbb906bd.js": "/precache-manifest.2c3a273fbdd1f4ca5172dc10cbb906bd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.26fc2d8e.chunk.css.map": "/static/css/main.26fc2d8e.chunk.css.map",
-    "static/js/2.db1b208b.chunk.js.LICENSE": "/static/js/2.db1b208b.chunk.js.LICENSE"
+    "main.css": "/groene-wegen/docs/static/css/main.26fc2d8e.chunk.css",
+    "main.js": "/groene-wegen/docs/static/js/main.a6b12f4b.chunk.js",
+    "main.js.map": "/groene-wegen/docs/static/js/main.a6b12f4b.chunk.js.map",
+    "runtime-main.js": "/groene-wegen/docs/static/js/runtime-main.62377bfa.js",
+    "runtime-main.js.map": "/groene-wegen/docs/static/js/runtime-main.62377bfa.js.map",
+    "static/js/2.db1b208b.chunk.js": "/groene-wegen/docs/static/js/2.db1b208b.chunk.js",
+    "static/js/2.db1b208b.chunk.js.map": "/groene-wegen/docs/static/js/2.db1b208b.chunk.js.map",
+    "index.html": "/groene-wegen/docs/index.html",
+    "precache-manifest.2c3a273fbdd1f4ca5172dc10cbb906bd.js": "/groene-wegen/docs/precache-manifest.2c3a273fbdd1f4ca5172dc10cbb906bd.js",
+    "service-worker.js": "/groene-wegen/docs/service-worker.js",
+    "static/css/main.26fc2d8e.chunk.css.map": "/groene-wegen/docs/static/css/main.26fc2d8e.chunk.css.map",
+    "static/js/2.db1b208b.chunk.js.LICENSE": "/groene-wegen/docs/static/js/2.db1b208b.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.62377bfa.js",
-    "static/js/2.db1b208b.chunk.js",
-    "static/css/main.26fc2d8e.chunk.css",
-    "static/js/main.a6b12f4b.chunk.js"
+    "groene-wegen/docs/static/js/runtime-main.62377bfa.js",
+    "groene-wegen/docs/static/js/2.db1b208b.chunk.js",
+    "groene-wegen/docs/static/css/main.26fc2d8e.chunk.css",
+    "groene-wegen/docs/static/js/main.a6b12f4b.chunk.js"
   ]
 }
