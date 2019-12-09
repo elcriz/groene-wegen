@@ -11,7 +11,7 @@ import Loader from './components/Loader';
 import Error from './components/Error';
 
 export const App = () => {
-    const [currentCar, setCurrentCar] = useState();
+	const [currentCar, setCurrentCar] = useState();
     const [error, setError] = useState(undefined);
     const [cars, setCars] = useState(StorageService.getFromStorage());
     const [isLoading, setIsLoading] = useState(false);
@@ -55,8 +55,9 @@ export const App = () => {
 
 		if (car.numberPlate) {
             if (shouldAddCar) {
-                setCars([car, ...cars]);
-                StorageService.addToStorage([car, ...cars]);
+				const carsToAdd = [car, ...cars];
+                setCars(carsToAdd);
+                StorageService.addToStorage(carsToAdd);
             }
             setCurrentCar(car);
         }
