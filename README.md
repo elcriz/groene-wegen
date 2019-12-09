@@ -12,6 +12,7 @@ Check and compare environmental specs (emissions, mileage etc.) for vehicles reg
 
 ## Roadmap:
 
+- Intuitive select mode for previously checked cars
 - Compare cars by their differences in percentages as an addition to the current side-by-side comparison
 - Use locally stored car info when no internet connection (already in use in compare mode)
 - Camera capture/photo library import (PRO)
