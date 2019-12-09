@@ -9,3 +9,9 @@ Check and compare environmental specs (emissions, mileage etc.) for Dutch regist
 - Async await
 - Using RDW OpenData solutions
 - etc.
+
+## Roadmap:
+
+- Compare cars by their differences in percentages
+- Camera capture/photo library import (PRO)
+- Automatic number plate recognition functionality (PRO)
