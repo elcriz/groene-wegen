@@ -75,6 +75,11 @@
             padding-right: $spacing / 2;
             font-size: 125%;
         }
+
+        span {
+            display: block;
+            font-size: 80%;
+        }
     }
 
     .car-info:not(.car-info--positioned) & {

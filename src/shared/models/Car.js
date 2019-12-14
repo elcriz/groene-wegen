@@ -5,6 +5,8 @@ export class Car {
         kenteken,
         merk,
         handelsbenaming,
+        aantal_cilinders,
+        cilinderinhoud,
         zuinigheidslabel,
         datum_eerste_toelating,
         inrichting,
@@ -45,7 +47,13 @@ export class Car {
                     ? parseFloat(leadingEngine.roetuitstoot)
                     : undefined
             } : undefined;
-            this.noiseLevels = {
+            this.engineInformation = {
+                cilinderAmount: aantal_cilinders
+                    ? parseFloat(aantal_cilinders)
+                    : undefined,
+                capacity: cilinderinhoud
+                    ? parseFloat(cilinderinhoud)
+                    : undefined,
                 inStationary: leadingEngine.geluidsniveau_stationair
                     ? parseFloat(leadingEngine.geluidsniveau_stationair)
                     : undefined,

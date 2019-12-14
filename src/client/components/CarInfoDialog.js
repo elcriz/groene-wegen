@@ -58,15 +58,22 @@ export const CarInfoDialog = ({
                 </div>
                 <div className="car-info__data">
                     <div className="car-info__data-inner">
-                        <h2 className="car-info__data-heading">Motorgeluid</h2>
+                        <h2 className="car-info__data-heading">Aandrijving</h2>
                         <dl className="car-info__data-list">
+                            <dt>Motorinhoud</dt>
+                            <dd>
+                                <strong>{item.engineInformation && item.engineInformation.capacity ? item.engineInformation.capacity : '-'}</strong> cm³
+                                {item.engineInformation && item.engineInformation.cilinderAmount && (
+                                    <span>({item.engineInformation.cilinderAmount} cilinders)</span>
+                                )}
+                            </dd>
                             <dt>Stationair</dt>
                             <dd>
-                                <strong>{item.noiseLevels && item.noiseLevels.inStationary ? item.noiseLevels.inStationary : '-'}</strong> dB
+                                <strong>{item.engineInformation && item.engineInformation.inStationary ? item.engineInformation.inStationary : '-'}</strong> dB
                             </dd>
                             <dt>In beweging</dt>
                             <dd>
-                                <strong>{item.noiseLevels && item.noiseLevels.inMotion ? item.noiseLevels.inMotion : '-'}</strong> dB
+                                <strong>{item.engineInformation && item.engineInformation.inMotion ? item.engineInformation.inMotion : '-'}</strong> dB
                             </dd>
                         </dl>
                     </div>
