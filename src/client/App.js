@@ -49,11 +49,11 @@ export const App = () => {
         StorageService.addToStorage(newCars);
     }
 
-    async function handleItemClick(numberPlate) {
+    const handleItemClick = async (numberPlate) => {
         await handleNumberPlateSubmit(numberPlate, false);
     }
 
-    async function handleNumberPlateSubmit(numberPlate, shouldAddCar = true) {
+    const handleNumberPlateSubmit = async (numberPlate, shouldAddCar = true) => {
         setIsLoading(true);
         const general = await RdwService.getByNumberPlate(numberPlate);
         const environmental = await RdwService.getEnvironmentalByNumberPlate(numberPlate);
